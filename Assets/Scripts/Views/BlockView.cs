@@ -30,7 +30,7 @@ namespace ColorBlockJam.Views
         private Direction _direction;
 
         private float _carryWorld;
-        private float _deadzonePx = 10f;
+        private float _deadzonePx = 1f;
 
         private Vector3 _targetPosition;
 
