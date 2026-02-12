@@ -1,0 +1,545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6521191506648227875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2962163065395018116}
+  - component: {fileID: 4221271956424952307}
+  - component: {fileID: 6040705690242534646}
+  m_Layer: 0
+  m_Name: SceneContext
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2962163065395018116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521191506648227875}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4221271956424952307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521191506648227875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89715ad69b973a14899afa2c6730b30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Zenject::Zenject.SceneContext
+  _scriptableObjectInstallers: []
+  _monoInstallers:
+  - {fileID: 6040705690242534646}
+  _installerPrefabs: []
+  _autoRun: 1
+  OnPreInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostInstall:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPreResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPostResolve:
+    m_PersistentCalls:
+      m_Calls: []
+  _parentNewObjectsUnderSceneContext: 0
+  _contractNames: []
+  _parentContractNames: []
+--- !u!114 &6040705690242534646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6521191506648227875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db2a120a39640929f66c3af9192e466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorBlockJam.GameSceneInstaller
+  _mainCamera: {fileID: 0}
+  _blockViewPrefab: {fileID: 5517037774370527903, guid: 42c3e6678c83206428c0abab620218e1, type: 3}
+  _gridCellViewPrefab: {fileID: 490839789889920289, guid: 2f466d68ef072be43874de45493698fc, type: 3}
+  _exitViewPrefab: {fileID: 9183040496082410803, guid: 28bf17ac8feb5dc49b093a3499a6077f, type: 3}
+  _obstacleViewPrefab: {fileID: 2109382014338766873, guid: d8f16ee83cb34aa42ae1f178be50de78, type: 3}
+  _uiPanelsPrefabs:
+  - {fileID: 4592806206177060545, guid: ccf90ac95065f1c4b9f79a5ef8d2d44c, type: 3}
+  - {fileID: 2345702226058281126, guid: 6df12b694f6a66f49af27b1a4b16906d, type: 3}
+  - {fileID: 1765779507469106879, guid: 36dafa525c72e5441b9bca181cc7baf0, type: 3}
+  _levelInfos:
+  - width: 4
+    height: 5
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 2, y: 2}
+      - {x: 3, y: 2}
+      - {x: 2, y: 3}
+      - {x: 3, y: 3}
+    - colorId: 1
+      cells:
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 0, y: 2}
+      - {x: 1, y: 2}
+    exitInfos:
+    - side: 2
+      colorId: 0
+      from: 1
+      to: 3
+    - side: 3
+      colorId: 1
+      from: 0
+      to: 2
+  - width: 5
+    height: 5
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 1, y: 1}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+    - colorId: 1
+      cells:
+      - {x: 3, y: 1}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+    exitInfos:
+    - side: 2
+      colorId: 0
+      from: 2
+      to: 4
+    - side: 3
+      colorId: 1
+      from: 0
+      to: 2
+  - width: 5
+    height: 6
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+      - {x: 1, y: 4}
+      - {x: 2, y: 4}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+    - colorId: 2
+      cells:
+      - {x: 2, y: 1}
+      - {x: 3, y: 1}
+      - {x: 3, y: 2}
+      - {x: 3, y: 3}
+    exitInfos:
+    - side: 2
+      colorId: 0
+      from: 0
+      to: 1
+    - side: 0
+      colorId: 1
+      from: 2
+      to: 3
+    - side: 1
+      colorId: 1
+      from: 2
+      to: 3
+    - side: 3
+      colorId: 2
+      from: 3
+      to: 4
+  - width: 7
+    height: 10
+    obstacles:
+    - {x: 2, y: 2}
+    - {x: 2, y: 3}
+    - {x: 3, y: 2}
+    - {x: 3, y: 3}
+    - {x: 4, y: 2}
+    - {x: 4, y: 3}
+    - {x: 2, y: 6}
+    - {x: 2, y: 7}
+    - {x: 3, y: 6}
+    - {x: 3, y: 7}
+    - {x: 4, y: 6}
+    - {x: 4, y: 7}
+    blockInfos:
+    - colorId: 4
+      cells:
+      - {x: 0, y: 8}
+      - {x: 1, y: 8}
+      - {x: 1, y: 9}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 9}
+      - {x: 3, y: 9}
+    - colorId: 2
+      cells:
+      - {x: 3, y: 8}
+      - {x: 4, y: 8}
+    - colorId: 3
+      cells:
+      - {x: 5, y: 8}
+      - {x: 5, y: 9}
+      - {x: 6, y: 8}
+    - colorId: 6
+      cells:
+      - {x: 0, y: 5}
+      - {x: 0, y: 6}
+    - colorId: 0
+      cells:
+      - {x: 0, y: 3}
+      - {x: 0, y: 4}
+    - colorId: 5
+      cells:
+      - {x: 1, y: 4}
+      - {x: 1, y: 5}
+      - {x: 2, y: 4}
+      - {x: 2, y: 5}
+    - colorId: 0
+      cells:
+      - {x: 3, y: 5}
+    - colorId: 6
+      cells:
+      - {x: 3, y: 4}
+    - colorId: 2
+      cells:
+      - {x: 4, y: 4}
+      - {x: 4, y: 5}
+      - {x: 5, y: 4}
+      - {x: 5, y: 5}
+    - colorId: 0
+      cells:
+      - {x: 6, y: 5}
+      - {x: 6, y: 6}
+    - colorId: 1
+      cells:
+      - {x: 6, y: 3}
+      - {x: 6, y: 4}
+    - colorId: 4
+      cells:
+      - {x: 0, y: 1}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+    - colorId: 5
+      cells:
+      - {x: 3, y: 0}
+      - {x: 2, y: 1}
+      - {x: 3, y: 1}
+      - {x: 4, y: 1}
+    - colorId: 6
+      cells:
+      - {x: 5, y: 0}
+      - {x: 5, y: 1}
+      - {x: 6, y: 1}
+    exitInfos:
+    - side: 2
+      colorId: 0
+      from: 2
+      to: 4
+    - side: 0
+      colorId: 1
+      from: 7
+      to: 8
+    - side: 1
+      colorId: 2
+      from: 7
+      to: 8
+    - side: 0
+      colorId: 3
+      from: 4
+      to: 5
+    - side: 1
+      colorId: 4
+      from: 4
+      to: 5
+    - side: 0
+      colorId: 5
+      from: 0
+      to: 1
+    - side: 1
+      colorId: 5
+      from: 0
+      to: 1
+    - side: 3
+      colorId: 6
+      from: 2
+      to: 4
+  - width: 5
+    height: 7
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 0, y: 5}
+      - {x: 1, y: 5}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 4}
+      - {x: 2, y: 5}
+      - {x: 2, y: 6}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 3}
+    - colorId: 2
+      cells:
+      - {x: 3, y: 5}
+      - {x: 4, y: 5}
+    - colorId: 2
+      cells:
+      - {x: 0, y: 3}
+    - colorId: 3
+      cells:
+      - {x: 1, y: 3}
+      - {x: 1, y: 4}
+    - colorId: 3
+      cells:
+      - {x: 3, y: 3}
+      - {x: 3, y: 4}
+      - {x: 4, y: 3}
+      - {x: 4, y: 4}
+    - colorId: 2
+      cells:
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+      - {x: 0, y: 2}
+    - colorId: 3
+      cells:
+      - {x: 1, y: 1}
+      - {x: 1, y: 2}
+      - {x: 2, y: 2}
+    - colorId: 3
+      cells:
+      - {x: 3, y: 2}
+    - colorId: 4
+      cells:
+      - {x: 1, y: 0}
+      - {x: 2, y: 0}
+    - colorId: 0
+      cells:
+      - {x: 4, y: 0}
+      - {x: 4, y: 1}
+      - {x: 3, y: 1}
+    exitInfos:
+    - side: 2
+      colorId: 2
+      from: 0
+      to: 1
+    - side: 2
+      colorId: 3
+      from: 3
+      to: 4
+    - side: 0
+      colorId: 1
+      from: 5
+      to: 6
+    - side: 1
+      colorId: 0
+      from: 5
+      to: 6
+    - side: 0
+      colorId: 1
+      from: 0
+      to: 1
+    - side: 1
+      colorId: 4
+      from: 0
+      to: 1
+    - side: 3
+      colorId: 4
+      from: 0
+      to: 1
+    - side: 3
+      colorId: 1
+      from: 3
+      to: 4
+  - width: 7
+    height: 7
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 0, y: 5}
+      - {x: 0, y: 6}
+      - {x: 1, y: 6}
+    - colorId: 1
+      cells:
+      - {x: 1, y: 5}
+      - {x: 2, y: 5}
+    - colorId: 2
+      cells:
+      - {x: 3, y: 4}
+      - {x: 3, y: 5}
+    - colorId: 3
+      cells:
+      - {x: 4, y: 3}
+      - {x: 4, y: 4}
+      - {x: 4, y: 5}
+    - colorId: 4
+      cells:
+      - {x: 5, y: 4}
+      - {x: 5, y: 5}
+      - {x: 6, y: 5}
+    - colorId: 2
+      cells:
+      - {x: 0, y: 3}
+      - {x: 0, y: 4}
+      - {x: 1, y: 4}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 3}
+      - {x: 2, y: 4}
+    - colorId: 5
+      cells:
+      - {x: 3, y: 3}
+    - colorId: 6
+      cells:
+      - {x: 5, y: 3}
+      - {x: 6, y: 2}
+      - {x: 6, y: 3}
+    - colorId: 4
+      cells:
+      - {x: 1, y: 1}
+      - {x: 1, y: 2}
+      - {x: 1, y: 3}
+    - colorId: 6
+      cells:
+      - {x: 2, y: 2}
+      - {x: 3, y: 1}
+      - {x: 3, y: 2}
+    - colorId: 6
+      cells:
+      - {x: 2, y: 1}
+    - colorId: 3
+      cells:
+      - {x: 4, y: 2}
+      - {x: 5, y: 2}
+    - colorId: 0
+      cells:
+      - {x: 5, y: 1}
+    - colorId: 6
+      cells:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - colorId: 3
+      cells:
+      - {x: 4, y: 0}
+      - {x: 5, y: 0}
+    exitInfos:
+    - side: 2
+      colorId: 1
+      from: 0
+      to: 2
+    - side: 2
+      colorId: 0
+      from: 3
+      to: 4
+    - side: 2
+      colorId: 1
+      from: 5
+      to: 6
+    - side: 1
+      colorId: 5
+      from: 6
+      to: 6
+    - side: 1
+      colorId: 6
+      from: 4
+      to: 5
+    - side: 1
+      colorId: 3
+      from: 3
+      to: 3
+    - side: 1
+      colorId: 1
+      from: 0
+      to: 2
+    - side: 3
+      colorId: 3
+      from: 6
+      to: 6
+    - side: 3
+      colorId: 6
+      from: 4
+      to: 5
+    - side: 3
+      colorId: 2
+      from: 1
+      to: 3
+    - side: 3
+      colorId: 3
+      from: 0
+      to: 0
+    - side: 0
+      colorId: 0
+      from: 0
+      to: 1
+    - side: 0
+      colorId: 6
+      from: 2
+      to: 3
+    - side: 0
+      colorId: 4
+      from: 4
+      to: 6
+  - width: 5
+    height: 6
+    obstacles: []
+    blockInfos:
+    - colorId: 0
+      cells:
+      - {x: 3, y: 1}
+      - {x: 3, y: 2}
+      - {x: 4, y: 1}
+      - {x: 4, y: 2}
+    - colorId: 1
+      cells:
+      - {x: 2, y: 2}
+      - {x: 2, y: 3}
+    - colorId: 2
+      cells:
+      - {x: 0, y: 3}
+      - {x: 0, y: 4}
+      - {x: 1, y: 3}
+      - {x: 1, y: 4}
+    exitInfos:
+    - side: 2
+      colorId: 0
+      from: 0
+      to: 1
+    - side: 0
+      colorId: 1
+      from: 4
+      to: 5
+    - side: 1
+      colorId: 1
+      from: 0
+      to: 1
+    - side: 3
+      colorId: 2
+      from: 3
+      to: 4

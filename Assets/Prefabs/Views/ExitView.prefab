@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3666923060473088120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2919001035047776466}
+  - component: {fileID: 9183040496082410803}
+  m_Layer: 0
+  m_Name: ExitView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2919001035047776466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666923060473088120}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9183040496082410803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3666923060473088120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08978fb1db9243918fab8456d270db80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorBlockJam.ExitView
+  _effectViewsPrefabs:
+  - {fileID: 6116961475979321633, guid: 5070d0e282fd0a5479e25244a5a6dd50, type: 3}
+  - {fileID: 5102185614908770301, guid: ec33278f916537647805f9b372258848, type: 3}
+  - {fileID: 8996373127467790917, guid: 55c9e43ae01c77140bdacadd8d2ca852, type: 3}
+  - {fileID: 362055827842745054, guid: 68b09a397bc324545887577fab7e0ec7, type: 3}
+  - {fileID: 569211166386679774, guid: a5f7c533ef62be84f9978dd9643c0da9, type: 3}
+  - {fileID: 1262531840698728549, guid: d0a166c5a8ff0074b8a880d8ae4c6f70, type: 3}
+  - {fileID: 5086098538574571483, guid: a7dfbc4f1ac8b8c4484408249ba56d07, type: 3}
+  _cellViewPrefabs:
+  - {fileID: 2868562601559314736, guid: e0aa54171cb47d149aeca8ed7ec70851, type: 3}
+  - {fileID: 7025826165272369875, guid: 609d9a87680e9ef43bc30bec37271d78, type: 3}
+  - {fileID: 1746151992744207499, guid: 11e50aaa4e7243e459827d9c33cd05b4, type: 3}
+  - {fileID: 7600598871455219328, guid: 21651c9b2e66cc74fb9d90de23cc018c, type: 3}
+  - {fileID: 637547969581881132, guid: f0d9a7b8905195b4fbb7bff9f6df038e, type: 3}
+  - {fileID: 842810140623833531, guid: b3e7ae53a7f98704cba6978404d5545c, type: 3}
+  - {fileID: 2186763781908636072, guid: 2ba4f8376df18ca4798f564117ba09a4, type: 3}

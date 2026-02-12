@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &162937105209173523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 353446215468546159}
+  - component: {fileID: 5517037774370527903}
+  m_Layer: 0
+  m_Name: BlockView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &353446215468546159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162937105209173523}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5517037774370527903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162937105209173523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5bb85d810c4d5891567c7a2d16100a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorBlockJam.BlockView
+  _speed: 12
+  _cellViewPrefabs:
+  - {fileID: 8407314161284052952, guid: bdb9a782811c2b447a764f61be02ed84, type: 3}
+  - {fileID: 6420306716721106562, guid: 3814fe9fbe5a4a1438111166ff705a9c, type: 3}
+  - {fileID: 7194468549627816577, guid: 3af4fbb9873d7b146954ce337ce2485f, type: 3}
+  - {fileID: 4655971716281588076, guid: 02a1d5b1aac477a47805439f37396bf0, type: 3}
+  - {fileID: 3056245533112190305, guid: 3e1f6d611d684b34c9606a275d0a6541, type: 3}
+  - {fileID: 6105341425194603740, guid: 3cab5f9981855fd43b794087f3b8e3b1, type: 3}
+  - {fileID: 6860869170506716268, guid: 64a1a23675bb8774d83c6081b8a5dee3, type: 3}
